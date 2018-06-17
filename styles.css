@@ -14,6 +14,7 @@ h2 {
 	line-height: 40px;
 	color: #a8b9d8;
 	margin: 0px 15px;
+	margin-top: 16px;
 }
 p {
 	color: #eeeeee;
@@ -24,17 +25,17 @@ p {
 	margin-top: 4px;
 	margin-bottom: 4px;
 }
-li {
+#links li {
 	display: inline-block;
 	margin-left: 10px;
-	margin-bottom: 24px;
+	margin-bottom: 8px;
 	transition: margin .15s;
 }
-li:hover {
+#links li:hover {
 	margin-left: 15px;
 	margin-right: -5px;
 }
-li p {
+#links li p {
 	display: inline-block;
 	font-size: 24px;
 	font-family: monospace;
@@ -43,13 +44,13 @@ li p {
 	vertical-align: middle;
 	margin-left: 0px;
 }
-li img {
+#links li img {
 	display: inline-block;
 	height: 28px;
 	vertical-align: middle;
 	margin-right: 5px;
 }
-li a {
+#links li a {
 	height: 32px;
 	color: #eeeeee;
 	text-decoration: none;
@@ -67,6 +68,7 @@ li a {
 	max-width: 800px;
 	margin: auto;
 	margin-top: 25px;
+	margin-bottom: 25px;
 	/*
 	border-width: 1px;
 	border-style: solid;
