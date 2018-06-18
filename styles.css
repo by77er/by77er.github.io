@@ -1,17 +1,19 @@
+@import url('https://fonts.googleapis.com/css?family=VT323');
+
 body {
 	background-color: #202020;
 }
 h1 {
-	font-family: monospace;
-	font-size: 48px;
-	line-height: 56px;
+	font-family: 'VT323', monospace;
+	font-size: 64px;
+	line-height: 72px;
 	color: #b8c9e8;
 	margin: 0px 15px;
 }
 h2 {
-	font-family: monospace;
-	font-size: 32px;
-	line-height: 40px;
+	font-family: 'VT323', monospace;
+	font-size: 40px;
+	line-height: 48px;
 	color: #a8b9d8;
 	margin: 0px 15px;
 	margin-top: 16px;
@@ -38,7 +40,7 @@ p {
 #links li p {
 	display: inline-block;
 	font-size: 24px;
-	font-family: monospace;
+	font-family: 'VT323', monospace;
 	line-height: 24px;
 	color: #fff;
 	vertical-align: middle;
