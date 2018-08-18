@@ -18,6 +18,15 @@ h2 {
 	margin: 0px 15px;
 	margin-top: 16px;
 }
+a {
+	text-decoration: none;
+	color: #a8b9d8;
+	transition: color .1s;
+}
+a:hover {
+	color: #b8c9e8;
+	transition: color .5s;
+}
 p {
 	color: #eeeeee;
 	font-family: Helvetica;
