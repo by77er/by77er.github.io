@@ -8,7 +8,8 @@ h1 {
 	font-size: 64px;
 	line-height: 72px;
 	color: #b8c9e8;
-	margin: 0px 15px;
+	margin: 0px 10px 0px 8px;
+	display: inline-block;
 }
 h2 {
 	font-family: 'VT323', monospace;
@@ -36,8 +37,13 @@ p {
 	margin-top: 4px;
 	margin-bottom: 4px;
 }
-#links li {
+#links {
 	display: inline-block;
+	vertical-align: middle;
+}
+#links li {
+	padding-bottom: 16px;
+	vertical-align: middle;
 	margin-left: 10px;
 	margin-bottom: 8px;
 	transition: margin .15s;
