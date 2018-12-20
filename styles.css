@@ -37,6 +37,9 @@ p {
 	margin-top: 4px;
 	margin-bottom: 4px;
 }
+.cap {
+	padding-left: 16px;
+}
 #links {
 	display: inline-block;
 	vertical-align: middle;
@@ -44,7 +47,7 @@ p {
 #links li {
 	padding-bottom: 16px;
 	display:inline-block;
-	vertical-align: middle;
+	vertical-align: mib7b7b7ddle;
 	margin-left: 10px;
 	margin-bottom: 8px;
 	transition: margin .15s;
@@ -76,10 +79,10 @@ p {
 .block {
 	margin: 0px 15px;
 	padding: 4px 4px;
-	border-width: 1px;
-        border-style: dashed;
-        border-color: #98a9c8;
-	color: #dddddd;
+	border-width: 0px 0px 0px 2px;
+    border-style: dotted;
+    border-color: #98a9c8;
+	color: #b7b7b7;
 }
 #allcontainer {
 	min-width: 350px;
