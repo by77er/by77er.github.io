@@ -19,6 +19,7 @@ export default {
     border-style: solid;
     border-width: 1px;
     border-radius: 4px;
+    border-color: #444444;
     padding: 3px;
     margin: 3px;
 }
