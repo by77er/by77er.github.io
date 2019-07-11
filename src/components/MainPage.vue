@@ -162,6 +162,12 @@ export default {
                     subData: ['Unity']
                 },
                 {
+                    name: 'Dart',
+                    color: '#66C2F9',
+                    years: 1,
+                    subData: ['Flutter']
+                },
+                {
                     name: 'Powershell',
                     color: '#002355',
                     alt: '#E8E7DD',
@@ -180,6 +186,7 @@ export default {
                 'Linux, Windows, & MacOS Administration',
                 'Relational Databases',
                 'Non-Relational Databases',
+                '3D Modeling & Animation',
                 'Docker',
                 'Software Reverse Engineering',
                 'Pentesting',
