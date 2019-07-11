@@ -1,5 +1,5 @@
 <template>
-    <div id="maincont">
+    <div id="maincont" class="maindown" ref="main">
         <pre id='name'>{{ asciiart }}</pre>
         <transition name="show">
             <div v-if="showMain">
@@ -73,6 +73,9 @@ export default {
                 this.asciiart = this.asciiart + i;
                 if (_count === target) {
                     this.showMain = true;
+                    setTimeout(() => {
+                        this.$refs.main.className = 'mainup';
+                    }, 0);
                 }
             }, timer);
             timer += 2;
@@ -223,7 +226,17 @@ hjm          \`""'  \`->>>    \`\`WHMb,.    \`-_<@)
     max-width: 800px;
     margin: auto;
     font-size: 19px;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
+}
+
+.maindown {
+    padding-top: 60px;
+    transition: padding-top .15s;
+}
+
+.mainup {
+    padding-top: 40px;
+    transition: padding-top .15s;
 }
 
 #name {

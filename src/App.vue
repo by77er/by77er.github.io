@@ -28,6 +28,7 @@ html, body {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #E8E7DD;
-  margin-top: 60px;
+  margin-top: 0px;
 }
+
 </style>
