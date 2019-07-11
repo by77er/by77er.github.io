@@ -9,8 +9,11 @@
                     <p><span class="green">Heyo.</span></p>
                     <p>
                         It's me, by77er <span class="dim">(aka Bit)</span>. I program professionally and as a hobby, and I'm majoring in Computer Science at
-                        <span class="red">$university</span>.
+                        <span id="badg" v-on:click="showAnimal()" class="red" ref="uni_el">$university</span>.
                     </p>
+                    <transition name="show">
+                        <pre id="badger_art" class="dim" v-if="badger != ''">{{badger}}</pre>
+                    </transition>
                     -
                     <p>
                         Though I'm primarily a programmer, I occasionally dabble in information security, design, and art.
@@ -81,6 +84,10 @@ export default {
             // Hi. No, my full birthday isn't here.
             this.age = `~${String((new Date()).getFullYear()-2001)}`;
         },
+        showAnimal() {
+            this.$refs.uni_el.className = 'green';
+            this.badger = bad;
+        },
         showLangDetail(lObject) {
             this.langObject = undefined;
             setTimeout(() => {this.langObject = lObject;}, 0);
@@ -90,6 +97,7 @@ export default {
     data() {
         return {
             asciiart: '',
+            badger: '',
             showMain: false,
             age: '$age',
             langObject: undefined,
@@ -189,6 +197,18 @@ const art = ` _          _____ _____
 |_.__/ \\__, /_/   /_/ \\___|_|   
        |___/                    
 `
+const bad = `               ___,,___                       
+          _,-='=- =-  -\`"--.__,,.._           
+       ,-;// /  - -       -   -= - "=.        
+     ,'///    -     -   -   =  - ==-=\`.      
+    |/// /  =    \`. - =   == - =.=_,,._ \`=/|  
+   ///    -   -    \\  - - = ,ndDMHHMM/\b  \\\\  
+ ,' - / /        / /\\ =  - /MM(,,._\`YQMML  \`| 
+<_,=^Kkm / / / / ///H|wnWWdMKKK#""-;. \`"0\  | 
+       \`""QkmmmmmnWMMM\""WHMKKMM\   \`--. \> \ 
+hjm          \`""'  \`->>>    \`\`WHMb,.    \`-_<@)
+                               \`"QMM\`.        
+                                  \`>>>\`      `
 </script>
 
 <style>
@@ -207,6 +227,14 @@ const art = ` _          _____ _____
     cursor: pointer;
 }
 
+#badger_art {
+    font-size: 15px;
+}
+
+#badg:hover {
+    cursor: pointer;
+}
+
 #lang_detail {
     margin-top: 10px;
     margin-bottom: 30px;
@@ -219,6 +247,9 @@ const art = ` _          _____ _____
 @media only screen and (max-width: 600px) {
     #name {
         font-size: 15px;
+    }
+    #badger_art {
+        font-size: 12px;
     }
 }
 
