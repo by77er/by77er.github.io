@@ -129,7 +129,7 @@ export default {
                     color: '#000080',
                     alt: '#E8E7DD', // base color
                     years: 6,
-                    subData: []
+                    subData: ['MoonScript']
                 },
                 {
                     name: 'Java',
