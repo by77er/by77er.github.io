@@ -143,7 +143,7 @@ export default {
                     color: '#3571ad',
                     alt: '#E8E7DD',
                     years: 3,
-                    subData: []
+                    subData: ['Arduino']
                 },
                 {
                     name: 'Elixir',
@@ -187,8 +187,7 @@ export default {
             skills: [
                 'Computer Networking',
                 'Linux, Windows, & MacOS Administration',
-                'Relational Databases',
-                'Non-Relational Databases',
+                'Relational & Non-Relational Databases',
                 '3D Modeling & Animation',
                 'Docker',
                 'Software Reverse Engineering',
