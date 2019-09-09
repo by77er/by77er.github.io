@@ -139,6 +139,13 @@ export default {
                     subData: ['Minecraft Forge', 'Bukkit']
                 },
                 {
+                    name: 'Scala',
+                    color: '#dd3533',
+                    alt: '#E8E7DD',
+                    years: 1,
+                    subData: []
+                },
+                {
                     name: 'C++',
                     color: '#3571ad',
                     alt: '#E8E7DD',
@@ -190,6 +197,7 @@ export default {
                 'Relational & Non-Relational Databases',
                 '3D Modeling & Animation',
                 'Docker',
+                'Functional Programming',
                 'Software Reverse Engineering',
                 'Pentesting',
                 'Fuzzing',
