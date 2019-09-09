@@ -23,7 +23,7 @@
                 </div>
                 <br>
                 <div class="text">
-                    <p><span class="green">Languages I know:</span></p>
+                    <p><span class="green">Languages I've used:</span></p>
                     <div class='flexc'>
                         <Lang v-for="item in languages" v-bind:key="item.name" v-bind:lang="item" :style="{'--theme-color': item.color, '--alt-color': item.alt || '#101011'}" class="language"></Lang>
                     </div>
