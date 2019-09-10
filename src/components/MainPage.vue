@@ -109,7 +109,7 @@ export default {
                     name: 'JavaScript',
                     color: '#f7e018',
                     years: 4,
-                    subData: ['Node.js (backend)', 'Vue.js']
+                    subData: ['Node.js (backend)', 'Vue.js', 'TypeScript', 'PureScript']
                 },
                 {
                     name: 'C',
