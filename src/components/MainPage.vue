@@ -172,10 +172,10 @@ export default {
                     subData: ['Unity']
                 },
                 {
-                    name: 'Dart',
-                    color: '#66C2F9',
+                    name: 'Crystal',
+                    color: '#FFFFFF',
                     years: 1,
-                    subData: ['Flutter']
+					subData: []
                 },
                 {
                     name: 'Powershell',
