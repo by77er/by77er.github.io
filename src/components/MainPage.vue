@@ -8,7 +8,7 @@
                     <br>
                     <p><span class="green">Heyo.</span></p>
                     <p>
-                        It's me, by77er <span class="dim">(aka Bit)</span>. I program professionally and as a hobby, and I'm majoring in Computer Science at
+                        It's me, by77er <span class="dim">(aka Bit)</span>. I program professionally and as a hobby, and I'm studying Computer Science at
                         <span id="badg" v-on:click="showAnimal()" class="red" ref="uni_el">$university</span>.
                     </p>
                     <transition name="show">
@@ -17,13 +17,13 @@
                     -
                     <p>
                         Though I'm primarily a programmer, I occasionally dabble in information security, design, and art.
-                        I'm currently <span id="age" ref="age_el" class="red" v-on:click="showAge()">{{age}}</span> years old, and I've been programming for six to seven years now.
+                        I'm currently <span id="age" ref="age_el" class="red" v-on:click="showAge()">{{age}}</span> years old, and I've been programming for seven years.
                         I do my best to stay busy with projects, and I'm always trying to learn something new.
                     </p>
                 </div>
                 <br>
                 <div class="text">
-                    <p><span class="green">Languages I've used:</span></p>
+                    <p><span class="green">Languages I'm comfortable with:</span></p>
                     <div class='flexc'>
                         <Lang v-for="item in languages" v-bind:key="item.name" v-bind:lang="item" :style="{'--theme-color': item.color, '--alt-color': item.alt || '#101011'}" class="language"></Lang>
                     </div>
@@ -41,7 +41,7 @@
                             </fieldset>
                         </div>
                     </transition>
-                    <p><span class="green">My other skills:</span></p>
+                    <p><span class="green">Misc. skills I've picked up:</span></p>
                     <div class='flexc'>
                         <Tag class="language" v-for="item in skills" v-bind:key="item" v-bind:cont="item"></Tag>
                     </div>
