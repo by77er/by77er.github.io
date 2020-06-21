@@ -17,7 +17,6 @@
                     -
                     <p>
                         Though I'm primarily a programmer, I occasionally dabble in information security, design, and art.
-                        I'm currently <span id="age" ref="age_el" class="red" v-on:click="showAge()">{{age}}</span> years old, and I've been programming for seven years.
                         I do my best to stay busy with projects, and I'm always trying to learn something new.
                     </p>
                 </div>
@@ -82,11 +81,6 @@ export default {
         });
     },
     methods: {
-        showAge() {
-            this.$refs.age_el.className = 'green';
-            // Hi. No, my full birthday isn't here.
-            this.age = `~${String((new Date()).getFullYear()-2001)}`;
-        },
         showAnimal() {
             this.$refs.uni_el.className = 'green';
             this.badger = bad;
@@ -102,7 +96,6 @@ export default {
             asciiart: '',
             badger: '',
             showMain: false,
-            age: '$age',
             langObject: undefined,
             languages: [
                 {
